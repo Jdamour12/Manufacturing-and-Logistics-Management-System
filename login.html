@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login | Manufacturing & Logistics System</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
-        <form>
-            <div class="input-group">
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="input-group">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" required>
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-        </form>
+        <div class="login-box animated fadeIn">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-envelope"></i>Email</label>
+                    <input type="email" id="email" name="email" required class="animated inputFadeIn">
+                </div>
+                <div class="input-group">
+                    <label for="password"> <i class="fas fa-lock"></i>Password</label>
+                    <input type="password" id="password" name="password" required class="animated inputFadeIn">
+                </div>
+                <button type="submit" class="login-btn animated bounceIn">Login</button>
+            </form>
+            <p class="forgot-password animated fadeIn"><a href="#">Forgot your password?</a></p>
+        </div>
     </div>
 </body>
 </html>
