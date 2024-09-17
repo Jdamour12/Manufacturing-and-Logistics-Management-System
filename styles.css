@@ -143,6 +143,19 @@ footer {
 
 /* CSS for login.html file */
 
+/* General Styling */
+.login-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #003366, #001f4d); /* Navy background */
+}
+
   /* Container */
     .login-container {
         display: flex;
