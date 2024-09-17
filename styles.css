@@ -1,0 +1,142 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* CSS for Home Page */
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: navy;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a i {
+    margin-right: 8px;
+}
+
+.btn-login {
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: navy;
+}
+
+.btn-cta {
+    background-color: gold;
+    padding: 15px 30px;
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-cta i {
+    margin-right: 8px;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #f4f4f4;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    color: navy;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* About section */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+
+/* Contact section */
+.contact-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section ul li i {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+
+/* CSS for animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInLeft 2s ease-in-out;
+}
