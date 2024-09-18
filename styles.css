@@ -1,4 +1,11 @@
 /* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -318,4 +325,101 @@ h2 {
 
 .login-link a:hover {
     color: #FFD700; /* Gold on hover */
+}
+
+/* CSS for dashboard.html */
+
+.dashboard-body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f7fc;
+}
+.container {
+    display: flex;
+    width: 100%;
+}  
+
+.sidebar {
+    width: 250px;
+    background-color: navy;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 90%;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li .material-icons {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: navy;
+}  
+
+.header .material-icons {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
+
+.dashboard-widgets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.widget {
+    width: 30%;
+    padding: 20px;
+    background-color: gold;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.widget:hover {
+    transform: scale(1.05);
+}
+
+.widget .material-icons {
+    font-size: 48px;
+}
+
+.analytics-section {
+    margin-top: 40px;
+}
+
+.analytics-section h2 {
+    font-size: 20px;
+    color: navy;
+    margin-bottom: 20px;
 }
