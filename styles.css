@@ -144,7 +144,7 @@ footer {
 /* CSS for login.html file */
 
 /* General Styling */
-.login-body {
+.login-body, .register-body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     margin: 0;
@@ -181,7 +181,9 @@ footer {
 }
 
 .input-group {
+    position: relative;
     margin-bottom: 20px;
+    padding-right: 40px;
 }
 
 .input-group label {
@@ -192,6 +194,11 @@ footer {
 }
 
 .input-group i{
+    position: absolute;
+    top: 65%;
+    left: 4px;
+    transform: translateY(-50%);
+    color: #003366; /* Navy color for icons */
     margin-right: 5px;
     color: gold;
     font-size: 30px;
@@ -199,10 +206,15 @@ footer {
 
 .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #FFD700; /* Gold color on focus */
 }
 
 .login-btn {
@@ -248,4 +260,62 @@ footer {
 
 .login-box {
     animation: slideIn 0.5s ease-out;
+}
+
+/* CSS for Register page */
+
+/* General Styling for Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #003366; /* Navy color for titles */
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn-register {
+    background-color: #003366; /* Navy */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: #FFD700; /* Gold on hover */
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: #FFD700; /* Gold on hover */
 }
