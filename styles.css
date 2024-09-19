@@ -797,7 +797,65 @@ header h1 {
     color: gold;
 }
 
+/* CSS for reports-and-analytics.html file */
 
+/* Specific CSS for Reports & Analytics Page */
 
+.download-report-btn {
+    background-color: white;
+    border: none;
+    color: navy;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.download-report-btn:hover {
+    background-color: navy;
+    color: white;
+}
 
+.analytics-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.chart-container {
+    width: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.chart-container h3 {
+    margin-bottom: 10px;
+    color: navy;
+}
+
+.chart-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Pagination Footer Styling */
+.RA-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.RA-footer button {
+    background-color: transparent;
+    border: none;
+    color: navy;
+    cursor: pointer;
+}
+
+footer button:hover i {
+    color: gold;
+}
