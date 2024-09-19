@@ -646,5 +646,95 @@ header h1 {
     background-color: gold;
 }
 
+/* CSS for inventory-management.html file */
+
+.IM-header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.IM-header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.add-item-btn {
+    background-color: white;
+    border: none;
+    color: navy;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-item-btn:hover {
+    background-color: navy;
+    color: white;
+}
+
+.filters {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.filters select {
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.inventory-table th, .inventory-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.inventory-table th {
+    background-color: navy;
+    color: white;
+}
+
+.reorder-btn, .edit-btn, .delete-btn, .view-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.reorder-btn:hover i, .edit-btn:hover i, .delete-btn:hover i, .view-btn:hover i {
+    color: gold;
+}
+
+.IM-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.prev-page-btn, .next-page-btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.prev-page-btn:hover, .next-page-btn:hover {
+    background-color: gold;
+}
+
+
 
 
