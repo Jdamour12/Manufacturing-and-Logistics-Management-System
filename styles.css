@@ -1256,4 +1256,112 @@ h2 {
     color: navy;
 }
 
+/* CSS for contact.html file */
+
+/* Contact Information Section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: navy;
+}
+
+.info-item i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: gold;
+}
+
+/* Contact Form */
+.contact-form {
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid navy;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: navy;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.submit-btn i {
+    margin-right: 10px;
+}
+
+.submit-btn:hover {
+    background-color: gold;
+    color: navy;
+}
+
+/* Footer with Social Media Icons */
+.contact-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-footer p {
+    color: navy;
+    font-size: 1.1em;
+}
+
+.contact-footer .social-icons {
+    margin-top: 10px;
+}
+
+.contact-footer .social-icons a {
+    margin: 0 10px;
+    color: navy;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.contact-footer .social-icons a:hover {
+    color: gold;
+}
+
+
 
