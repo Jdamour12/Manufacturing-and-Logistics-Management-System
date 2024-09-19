@@ -1363,5 +1363,55 @@ h2 {
     color: gold;
 }
 
+/* CSS for logout.html file */
+
+/* General container setup */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f8fc;
+}
+
+/* Logout Section */
+.logout-section {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logout Page Icons */
+.logout-section h1 {
+    font-size: 24px;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+/* Logout Buttons */
+.confirm-btn, .cancel-btn {
+    background-color: gold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn:hover, .cancel-btn:hover {
+    background-color: navy;
+}
+
+/* Icon Size */
+.fas {
+    margin-right: 10px;
+}
+
+
 
 
