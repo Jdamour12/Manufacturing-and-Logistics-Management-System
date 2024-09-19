@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics & Delivery Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- for icons -->
+</head>
+<body>
+    <header class="LDM-header">
+        <h1><i class="fas fa-truck"></i> Logistics & Delivery Management</h1>
+    </header>
+
+    <section class="controls">
+        <button class="add-delivery-btn"><i class="fas fa-plus-circle"></i> Add New Delivery</button>
+        <div class="search-bar">
+            <input type="text" placeholder="Search deliveries...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+
+    <section class="filters">
+        <label for="status-filter">Filter by status:</label>
+        <select id="status-filter">
+            <option value="all">All</option>
+            <option value="in-transit">In Transit</option>
+            <option value="delivered">Delivered</option>
+            <option value="pending">Pending</option>
+        </select>
+    </section>
+
+    <table class="deliveries-table">
+        <thead>
+            <tr>
+                <th>Delivery ID</th>
+                <th>Product</th>
+                <th>Destination</th>
+                <th>Status</th>
+                <th>Assigned Personnel</th>
+                <th>Delivery Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Product A</td>
+                <td>New York, NY</td>
+                <td>In Transit</td>
+                <td>John Doe</td>
+                <td>2024-09-14</td>
+                <td>
+                    <button class="track-btn"><i class="fas fa-map-marker-alt"></i></button>
+                    <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                    <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                </td>
+            </tr>
+            <!-- More rows go here -->
+        </tbody>
+    </table>
+
+    <footer class="LDM-footer">
+        <p>Page 1 of 10</p>
+        <button class="prev-page-btn"><i class="fas fa-arrow-left"></i></button>
+        <button class="next-page-btn"><i class="fas fa-arrow-right"></i></button>
+    </footer>
+</body>
+</html>
